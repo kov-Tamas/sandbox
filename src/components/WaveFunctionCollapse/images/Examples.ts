@@ -1,0 +1,17 @@
+export default class Examples {
+    static up = require('./up.png')
+    static right = require('./right.png')
+    static down = require('./down.png')
+    static left = require('./left.png')
+    static up_right = require('./up_right.png')
+    static up_down = require('./up_down.png')
+    static up_left = require('./up_left.png')
+    static up_right_down = require('./up_right_down.png')
+    static up_right_left = require('./up_right_left.png')
+    static up_down_left = require('./up_down_left.png')
+    static up_right_down_left = require('./up_right_down_left.png')
+    static right_down = require('./right_down.png')
+    static right_left = require('./right_left.png')
+    static right_down_left = require('./right_down_left.png')
+    static down_left = require('./down_left.png')
+}
