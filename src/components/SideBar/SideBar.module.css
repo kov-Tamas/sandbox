@@ -1,0 +1,33 @@
+.sidebar {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	border-right: 1px solid white ;
+    background: darkblue;
+}
+
+.sidebarOption:hover{
+	user-select: none; /* Standard syntax */
+	transition: all 0.5s ease-in-out;
+	background-color: rgb(62, 53, 143);
+	transform: translateX(0vw);
+	cursor: pointer;
+}
+
+.sidebarOption{
+	user-select: none; /* Standard syntax */
+	display: block;
+	color: rgb(185, 161, 52);
+	border: 0px solid rgb(101, 105, 133);
+	border-left: 0;
+	border-right: 0;
+	margin: 0vh 0vw 0vh 0vw;
+	padding: 2vh 1vw 2vh 1vw;
+	width: max(inherit,7vw);
+	transform: translateX(0vw);
+	font-size: large;
+	text-align: end;
+	text-decoration: none;
+}
+
