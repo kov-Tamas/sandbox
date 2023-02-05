@@ -12,14 +12,16 @@ import SideBar from '../SideBar/SideBar';
 //Pages
 import Conway from '../Conway/Conway';
 import HomePage from '../HomePage/HomePage';
+import WaveFunctionCollapse from '../WaveFunctionCollapse/WaveFunctionCollapse';
 
 interface ApplicationProps {}
 class Application extends React.Component<ApplicationProps> {
-  navigate
-  routeObservable
-  router
+  navigate;
+  routeObservable;
+  router;
   routes = [
     {label:"Home Page",value:"/"},
+    {label:"WFC",value:"/wfc"},
     {label:"Conway",value:"/conway"}
   ]
   constructor(props){
@@ -35,6 +37,10 @@ class Application extends React.Component<ApplicationProps> {
         path: "/conway",
         element: <Conway/>
       },
+      {
+        path: "/wfc",
+        element: <WaveFunctionCollapse/>
+      },
     ]);
   }
 
@@ -43,8 +49,6 @@ class Application extends React.Component<ApplicationProps> {
       this.router.navigate(newRoute);
     });
   }
-
-  
   
   render = () => {
     return <div className={styles['Site']}>
